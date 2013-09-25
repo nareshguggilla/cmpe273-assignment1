@@ -38,10 +38,4 @@ public interface ReviewRepositoryInterface {
      */
     ArrayList<Review> getReviews();
     
-    /**
-     * 
-     * @return the count of Reviews for a book.
-     */
-    int getReviewCount();
-    
 }

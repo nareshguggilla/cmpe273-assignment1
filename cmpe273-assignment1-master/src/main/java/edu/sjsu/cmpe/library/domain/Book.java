@@ -15,7 +15,6 @@ public class Book {
     private long numPages;
     @JsonProperty("authors")
     private ArrayList<Author> authors;
-    private int reviewCount;
 
     /**
      * @return the isbn
@@ -107,17 +106,4 @@ public class Book {
 		this.publicationDate = publicationDate;
 	}
 
-	/**
-	 * @return the reviewCount
-	 */
-	public int getReviewCount() {
-		return reviewCount;
-	}
-
-	/**
-	 * @param reviewCount the reviewCount to set
-	 */
-	public void setReviewCount(int reviewCount) {
-		this.reviewCount = reviewCount;
-	}
 }

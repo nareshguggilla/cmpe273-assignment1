@@ -67,10 +67,4 @@ public class ReviewRepository implements ReviewRepositoryInterface {
     	return filterReviews;
     }
     
-    @Override
-    public int getReviewCount() {
-    	
-    	return 0;
-    }
-    
 }
