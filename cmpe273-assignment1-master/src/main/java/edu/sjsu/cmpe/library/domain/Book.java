@@ -16,10 +16,6 @@ public class Book {
     @JsonProperty("authors")
     private ArrayList<Author> authors;
     private int reviewCount;
-    
-    
-
-    // add more fields here
 
     /**
      * @return the isbn

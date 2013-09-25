@@ -35,5 +35,4 @@ public interface BookRepositoryInterface {
     
     void updateBookInfo(Book book, Entry<String, List<String>> entry);
 
-    // TODO: add other operations here!
 }

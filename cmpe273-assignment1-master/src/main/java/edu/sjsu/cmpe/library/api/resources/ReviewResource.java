@@ -36,7 +36,6 @@ public class ReviewResource {
 	}
 
 	@POST
-	//@Path("/{isbn}/reviews")
 	@Timed(name = "create-review")
 	public Response createReview(@PathParam("isbn") long isbn, Review request) {
 		// Store the new book in the ReviewRepository so that we can retrieve it.
@@ -61,7 +60,6 @@ public class ReviewResource {
 	}
 
 	@GET
-	//@Path("/{isbn}/reviews")
 	@Timed(name = "view-all-reviews")
 	public ArrayList<Review> getAllReviews() {
 

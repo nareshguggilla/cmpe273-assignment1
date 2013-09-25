@@ -41,7 +41,7 @@ public class ReviewRepository implements ReviewRepositoryInterface {
 	// Generate new Id
 	Integer id = generateId();
 	newReview.setId(id);
-//	newReview.setIsbn(isbn);
+
 	reviewInMemoryMap.putIfAbsent(id, newReview);
 
 	return newReview;
@@ -69,6 +69,7 @@ public class ReviewRepository implements ReviewRepositoryInterface {
     
     @Override
     public int getReviewCount() {
+    	
     	return 0;
     }
     

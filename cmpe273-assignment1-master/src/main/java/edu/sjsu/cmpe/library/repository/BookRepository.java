@@ -44,7 +44,7 @@ public class BookRepository implements BookRepositoryInterface {
 	// Generate new ISBN
 	Long isbn = generateISBNKey();
 	newBook.setIsbn(isbn);
-	// TODO: create and associate other fields such as author
+
 	ArrayList<Author> authors = newBook.getAuthors();
 	int i = 0;
 	
@@ -52,8 +52,6 @@ public class BookRepository implements BookRepositoryInterface {
 		item.setId(++i);
 	}
 
-
-	// Finally, save the new book into the map
 	bookInMemoryMap.putIfAbsent(isbn, newBook);
 
 	return newBook;

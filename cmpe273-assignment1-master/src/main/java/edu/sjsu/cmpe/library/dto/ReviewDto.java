@@ -7,7 +7,6 @@ import edu.sjsu.cmpe.library.domain.Review;
 @JsonPropertyOrder(alphabetic = true)
 public class ReviewDto extends LinksDto {
     private Review review;
-    //private ArrayList<Review> reviews = new ArrayList<Review>();
 
     /**
      * @param book
